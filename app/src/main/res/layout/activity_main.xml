@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:background="@drawable/top_bg"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Newton method for system of equations"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_style"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For equations:"
+                android:textSize="14sp"
+                android:layout_margin="15dp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tg(x-y+k)-x*y"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a*x^2+2y^2-1"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif-condensed"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a value a: "
+            android:layout_margin="15dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/inputA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.6"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:maxLength="4"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a value k: "
+            android:layout_margin="15dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/inputK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:maxLength="4"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_style"/>
+
+        <TextView
+            android:id="@+id/showAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Answer:"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
